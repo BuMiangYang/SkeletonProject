@@ -14,13 +14,10 @@ kapt {
 }
 
 android {
+    
     compileSdkVersion rootProject.ext.versions.compileSdkVersion
 
-//    buildToolsVersion rootProject.ext.versions.buildToolsVersion
-
-
     defaultConfig {
-//        applicationId "com.sunway.login"
         minSdkVersion rootProject.ext.versions.minSdkVersion
         targetSdkVersion rootProject.ext.versions.targetSdkVersion
         versionCode rootProject.ext.versions.versionCode

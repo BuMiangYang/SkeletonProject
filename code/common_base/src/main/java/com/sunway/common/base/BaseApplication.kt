@@ -23,6 +23,7 @@ open class BaseApplication : Application() {
     companion object {
         var context: Context by Delegates.notNull()
             private set
+        lateinit var instance: Application
     }
 
     override fun attachBaseContext(base: Context) {
@@ -33,6 +34,8 @@ open class BaseApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        instance = this
+        context = applicationContext
         initARouter()
         initLogger()
         initCrashManage()

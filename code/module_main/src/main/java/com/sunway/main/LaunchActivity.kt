@@ -1,12 +1,25 @@
 package com.sunway.main
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import com.sunway.common.base.BaseActivity
 
-class LaunchActivity : AppCompatActivity() {
+/**
+ * @author BuMingYang
+ * @des
+ */
+class LaunchActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_launch)
+    override fun attachLayoutRes(): Int {
+        return R.layout.activity_launch
     }
+
+    override fun initData() {
+    }
+
+    override fun initView() {
+    }
+
+    override fun start() {
+    }
+
+
 }

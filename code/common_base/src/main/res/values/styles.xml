@@ -3,6 +3,13 @@
     <!--应用主题-->
     <style name="AdmTheme" parent="@android:style/Theme.NoTitleBar"/>
 
+    <!--启动页-->
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
     <style name="AppStartLoadTranslucent" parent="android:Theme">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowNoTitle">true</item>

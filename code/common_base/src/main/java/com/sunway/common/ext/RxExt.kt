@@ -34,8 +34,8 @@ fun <T : BaseBean> Observable<T>.ss(
             override fun onSubscribe(d: Disposable) {
                 if (isShowLoading) view?.showLoading()
                 model?.addDisposable(d)
-                if (!NetWorkUtil.isNetworkConnected(BaseApplication.context)) {
-                    view?.showDefaultMsg(BaseApplication.context.resources.getString(R.string.network_unavailable_tip))
+                if (!NetWorkUtil.isNetworkConnected(BaseApplication.instance)) {
+                    view?.showDefaultMsg(BaseApplication.instance.resources.getString(R.string.network_unavailable_tip))
                     onComplete()
                 }
             }
