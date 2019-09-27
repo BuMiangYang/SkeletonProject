@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--Glide 加在失败 修改为true 此处之前为false-->
+    <!--谷歌安全验证要求false-->
+    <base-config cleartextTrafficPermitted="false" />
+
+</network-security-config>
+
+
+
+
