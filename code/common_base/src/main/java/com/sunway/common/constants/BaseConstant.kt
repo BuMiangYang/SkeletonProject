@@ -1,4 +1,4 @@
-package com.sunway.common.base
+package com.sunway.common.constants
 
 import com.sunway.common.utils.Preference
 

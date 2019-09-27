@@ -3,7 +3,7 @@ package com.sunway.common.http
 import com.sunway.common.BuildConfig
 import com.sunway.common.base.BaseApi
 import com.sunway.common.base.BaseApplication
-import com.sunway.common.base.BaseConstant
+import com.sunway.common.constants.BaseConstant
 import com.sunway.common.http.interceptor.CacheInterceptor
 import com.sunway.common.http.interceptor.HeaderInterceptor
 import com.sunway.common.http.interceptor.SaveCookieInterceptor

@@ -28,7 +28,6 @@
         <item name="android:background">@color/transparent</item>
     </style>
 
-
     <!--Loading Dialog-->
     <style name="LoadingDialog" parent="android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
@@ -72,4 +71,11 @@
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowNoTitle">true</item>
     </style>
+
+    <!-- 浮动窗口动画 -->
+    <style name="anim_float_view">
+        <item name="android:windowEnterAnimation">@anim/push_up_in</item>
+        <item name="android:windowExitAnimation">@anim/push_up_out</item>
+    </style>
+
 </resources>

@@ -4,7 +4,8 @@ import com.sunway.common.base.BaseApplication
 
 /**
  *  @author BuMingYang
- *  @des
+ *  @des 清单文件已使用
  */
 class AppApplication : BaseApplication() {
+
 }

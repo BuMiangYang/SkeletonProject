@@ -1,6 +1,6 @@
 package com.sunway.common.http.interceptor
 
-import com.sunway.common.base.BaseConstant
+import com.sunway.common.constants.BaseConstant
 import okhttp3.Interceptor
 import okhttp3.Response
 

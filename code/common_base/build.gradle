@@ -61,6 +61,10 @@ dependencies {
     //Glide
     api rootProject.ext.dependencies["glide"]
 
+    api rootProject.ext.dependencies["rxJava"]
+    api rootProject.ext.dependencies["rxAndroid"]
+    api rootProject.ext.dependencies["rxKotlin"]
+
 
 
 }
