@@ -1,12 +1,22 @@
 package com.sunway.login
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import com.alibaba.android.arouter.facade.annotation.Route
+import com.sunway.common.base.BaseActivity
+import com.sunway.common.constants.ARouterConfig
 
-class MainActivity : AppCompatActivity() {
+@Route(path = ARouterConfig.LOGIN_MAIN)
+class MainActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+    override fun attachLayoutRes(): Int {
+        return R.layout.activity_main
+    }
+
+    override fun initData() {
+    }
+
+    override fun initView() {
+    }
+
+    override fun start() {
     }
 }

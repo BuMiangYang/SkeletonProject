@@ -6,7 +6,7 @@ if (Boolean.valueOf(rootProject.ext.isModule)) {
 
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-
+//Arouter路由配置
 apply plugin: 'kotlin-kapt'
 kapt {
     arguments {
@@ -16,16 +16,17 @@ kapt {
 
 android {
     compileSdkVersion rootProject.ext.versions.compileSdkVersion
-//    buildToolsVersion rootProject.ext.versions.buildToolsVersion
 
     defaultConfig {
-//        applicationId "com.sunway.main"
         minSdkVersion rootProject.ext.versions.minSdkVersion
         targetSdkVersion rootProject.ext.versions.targetSdkVersion
         versionCode rootProject.ext.versions.versionCode
         versionName rootProject.ext.versions.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        //MultiDex分包方法
+        multiDexEnabled true
 
     }
 
@@ -62,7 +63,9 @@ dependencies {
 
     implementation project(':common_base')
     //Arouter路由
-    annotationProcessor rootProject.ext.dependencies["arouter_compiler"]
+    //FIXME 此直接如下使用跳转不成功
+//    annotationProcessor rootProject.ext.dependencies["arouter_compiler"]
+    kapt 'com.alibaba:arouter-compiler:1.2.2'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'

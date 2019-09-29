@@ -23,7 +23,9 @@ ext {
             multidexVersion         : "1.0.2",
             butterknifeVersion      : "8.4.0",
             arouterApiVersion       : "1.4.0",
-            arouterCompilerVersion  : "1.2.1",
+
+            arouterCompilerVersion  : "1.2.2",
+
             arouterannotationVersion: "1.0.4",
             eventbusVersion         : "3.0.0",
             novateVersion           : "1.5.5",

@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.alibaba.android.arouter.launcher.ARouter
 import com.sunway.common.R
 import com.sunway.common.constants.BaseConstant
 import com.sunway.common.event.NetworkChangeEvent
@@ -75,6 +76,7 @@ abstract class BaseActivity : AppCompatActivity() {
         window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN)
         // AutoDensityUtil.setCustomDensity(this, App.instance)
         super.onCreate(savedInstanceState)
+        ARouter.getInstance().inject(this)
         setContentView(attachLayoutRes())
         if (useEventBus()) {
             EventBus.getDefault().register(this)
@@ -84,6 +86,7 @@ abstract class BaseActivity : AppCompatActivity() {
         initView()
         start()
         initListener()
+
     }
 
     override fun onResume() {

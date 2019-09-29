@@ -10,7 +10,7 @@ open class BaseConstant {
 
     companion object {
 
-        const val BASE_URL = "https://www.wanandroid.com/"
+        const val BASE_URL = ""
 
         const val DEFAULT_TIMEOUT: Long = 15
 

@@ -3,8 +3,9 @@
           package="com.sunway.main">
 
     <application>
+        <activity android:name=".RouteActivity"/>
 
-        <activity android:name=".LaunchActivity"></activity>
+        <activity android:name=".MainActivity"/>
 
     </application>
 

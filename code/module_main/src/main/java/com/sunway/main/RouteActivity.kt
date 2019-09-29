@@ -1,15 +1,12 @@
 package com.sunway.main
 
+import com.alibaba.android.arouter.facade.annotation.Route
 import com.sunway.common.base.BaseActivity
 
-/**
- * @author BuMingYang
- * @des
- */
-class LaunchActivity : BaseActivity() {
-
+@Route(path = "/main/routeAct")
+class RouteActivity : BaseActivity() {
     override fun attachLayoutRes(): Int {
-        return R.layout.activity_launch
+        return R.layout.activity_route
     }
 
     override fun initData() {
@@ -20,6 +17,4 @@ class LaunchActivity : BaseActivity() {
 
     override fun start() {
     }
-
-
 }

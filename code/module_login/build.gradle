@@ -10,11 +10,12 @@ apply plugin: 'kotlin-kapt'
 kapt {
     arguments {
         arg("AROUTER_MODULE_NAME", project.getName())
+        generateStubs = true
     }
 }
 
 android {
-    
+
     compileSdkVersion rootProject.ext.versions.compileSdkVersion
 
     defaultConfig {
@@ -49,7 +50,6 @@ android {
             }
         }
     }
-
 }
 
 dependencies {
@@ -62,9 +62,13 @@ dependencies {
     implementation project(':common_base')
 
     //Arouter路由
-    annotationProcessor rootProject.ext.dependencies["arouter_compiler"]
+    kapt rootProject.ext.dependencies["arouter_compiler"]
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
+
+repositories {
+    mavenCentral()
 }
