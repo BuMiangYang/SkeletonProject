@@ -1,2 +1,2 @@
 # SkeletonProject
-组件化开发框架
+-Kotlin + mvp + Retrofit2 + Rxjava2 + Aroute 编写 组件化开发基础框架
