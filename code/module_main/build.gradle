@@ -11,6 +11,7 @@ apply plugin: 'kotlin-kapt'
 kapt {
     arguments {
         arg("AROUTER_MODULE_NAME", project.getName())
+        generateStubs = true
     }
 }
 
@@ -63,9 +64,7 @@ dependencies {
 
     implementation project(':common_base')
     //Arouter路由
-    //FIXME 此直接如下使用跳转不成功
-//    annotationProcessor rootProject.ext.dependencies["arouter_compiler"]
-    kapt 'com.alibaba:arouter-compiler:1.2.2'
+    kapt rootProject.ext.dependencies["arouter_compiler"]
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'

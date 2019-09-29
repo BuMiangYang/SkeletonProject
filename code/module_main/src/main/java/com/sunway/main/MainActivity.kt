@@ -3,13 +3,15 @@ package com.sunway.main
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.alibaba.android.arouter.launcher.ARouter
 import com.sunway.common.base.BaseActivity
+import com.sunway.common.constants.ARouterConfig
+import com.sunway.common.manage.IntentManage
 import kotlinx.android.synthetic.main.act_main_main.*
 
 /**
  * @author BuMingYang
  * @des
  */
-@Route(path = "/main/index")
+@Route(path = ARouterConfig.MAIN_INDEX)
 class MainActivity : BaseActivity() {
 
     override fun attachLayoutRes(): Int {
@@ -22,7 +24,7 @@ class MainActivity : BaseActivity() {
     override fun initView() {
         tv_main.setOnClickListener {
 
-            ARouter.getInstance().build("/main/routeAct").navigation()
+            IntentManage.toActivity(ARouterConfig.MAIN_ROUTE)
 
         }
     }

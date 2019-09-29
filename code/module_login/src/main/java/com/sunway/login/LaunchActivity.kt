@@ -1,15 +1,13 @@
 package com.sunway.login
 
 import android.os.Build
-import android.widget.Toast
+import android.os.Handler
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import com.alibaba.android.arouter.facade.annotation.Route
-import com.alibaba.android.arouter.launcher.ARouter
 import com.sunway.common.base.BaseActivity
 import com.sunway.common.constants.ARouterConfig
 import com.sunway.common.manage.IntentManage
-import kotlinx.android.synthetic.main.act_login_launch.*
 
 /**
  * @author BuMingYang
@@ -44,22 +42,18 @@ class LaunchActivity : BaseActivity() {
 
     override fun initView() {
 
-        // 模块内跳转
-        btn_main.setOnClickListener {
 
-            IntentManage.toActivity(ARouterConfig.LOGIN_MAIN)
-        }
-        // 模块间跳转
-        btn_module_main.setOnClickListener {
-
-            ARouter.getInstance().build(ARouterConfig.MAIN_INDEX).navigation()
-
-        }
     }
 
     override fun start() {
 
-        Toast.makeText(this@LaunchActivity, "Login", Toast.LENGTH_SHORT).show()
+        Handler().postDelayed({
+
+            IntentManage.toActivity(ARouterConfig.LOGIN_MAIN)
+            finish()
+
+        }, 3000)
+
 
     }
 }
