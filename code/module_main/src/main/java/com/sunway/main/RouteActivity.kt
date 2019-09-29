@@ -6,7 +6,7 @@ import com.sunway.common.base.BaseActivity
 @Route(path = "/main/routeAct")
 class RouteActivity : BaseActivity() {
     override fun attachLayoutRes(): Int {
-        return R.layout.activity_route
+        return R.layout.act_main_route
     }
 
     override fun initData() {

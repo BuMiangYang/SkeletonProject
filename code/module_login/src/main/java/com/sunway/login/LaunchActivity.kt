@@ -9,7 +9,7 @@ import com.alibaba.android.arouter.launcher.ARouter
 import com.sunway.common.base.BaseActivity
 import com.sunway.common.constants.ARouterConfig
 import com.sunway.common.manage.IntentManage
-import kotlinx.android.synthetic.main.activity_launch.*
+import kotlinx.android.synthetic.main.act_login_launch.*
 
 /**
  * @author BuMingYang
@@ -19,7 +19,7 @@ import kotlinx.android.synthetic.main.activity_launch.*
 class LaunchActivity : BaseActivity() {
 
     override fun attachLayoutRes(): Int {
-        return R.layout.activity_launch
+        return R.layout.act_login_launch
     }
 
     override fun initData() {

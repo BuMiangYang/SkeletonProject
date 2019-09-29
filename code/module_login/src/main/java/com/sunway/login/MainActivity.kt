@@ -8,7 +8,7 @@ import com.sunway.common.constants.ARouterConfig
 class MainActivity : BaseActivity() {
 
     override fun attachLayoutRes(): Int {
-        return R.layout.activity_main
+        return R.layout.act_login_main
     }
 
     override fun initData() {

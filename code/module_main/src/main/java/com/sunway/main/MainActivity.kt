@@ -3,7 +3,7 @@ package com.sunway.main
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.alibaba.android.arouter.launcher.ARouter
 import com.sunway.common.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.act_main_main.*
 
 /**
  * @author BuMingYang
@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : BaseActivity() {
 
     override fun attachLayoutRes(): Int {
-        return R.layout.activity_main
+        return R.layout.act_main_main
     }
 
     override fun initData() {
