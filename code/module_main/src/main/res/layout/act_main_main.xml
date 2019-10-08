@@ -9,12 +9,22 @@
 
     <Button
             android:id="@+id/tv_main"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Module—Main"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="点击-模块间跳转-RouteActivity"
+            android:layout_margin="5dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+            android:id="@+id/btn_crash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="点击-Crash"
+            android:layout_margin="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_main"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

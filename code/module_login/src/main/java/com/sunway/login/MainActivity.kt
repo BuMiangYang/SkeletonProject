@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.act_login_main.*
  * @author BuMingYang
  * @des
  */
-@Route(path = ARouterConfig.LOGIN_MAIN)
+@Route(path = LoginRouter.LOGIN_MAIN)
 class MainActivity : BaseActivity() {
 
     override fun attachLayoutRes(): Int {
@@ -21,8 +21,13 @@ class MainActivity : BaseActivity() {
     }
 
     override fun initView() {
+
         btn_main.setOnClickListener {
             IntentManage.toActivity(ARouterConfig.MAIN_INDEX)
+        }
+
+        btn_crash.setOnClickListener {
+
         }
     }
 

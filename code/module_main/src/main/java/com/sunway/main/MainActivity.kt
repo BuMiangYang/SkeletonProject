@@ -1,7 +1,6 @@
 package com.sunway.main
 
 import com.alibaba.android.arouter.facade.annotation.Route
-import com.alibaba.android.arouter.launcher.ARouter
 import com.sunway.common.base.BaseActivity
 import com.sunway.common.constants.ARouterConfig
 import com.sunway.common.manage.IntentManage
@@ -24,7 +23,7 @@ class MainActivity : BaseActivity() {
     override fun initView() {
         tv_main.setOnClickListener {
 
-            IntentManage.toActivity(ARouterConfig.MAIN_ROUTE)
+            IntentManage.toActivity(MainRouter.MAIN_ROUTE)
 
         }
     }

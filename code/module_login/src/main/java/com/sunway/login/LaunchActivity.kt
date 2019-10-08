@@ -4,16 +4,13 @@ import android.os.Build
 import android.os.Handler
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
-import com.alibaba.android.arouter.facade.annotation.Route
 import com.sunway.common.base.BaseActivity
-import com.sunway.common.constants.ARouterConfig
 import com.sunway.common.manage.IntentManage
 
 /**
  * @author BuMingYang
  * @des
  */
-@Route(path = ARouterConfig.LOGIN_LAUNCH)
 class LaunchActivity : BaseActivity() {
 
     override fun attachLayoutRes(): Int {
@@ -49,7 +46,7 @@ class LaunchActivity : BaseActivity() {
 
         Handler().postDelayed({
 
-            IntentManage.toActivity(ARouterConfig.LOGIN_MAIN)
+            IntentManage.toActivity(LoginRouter.LOGIN_MAIN)
             finish()
 
         }, 3000)
