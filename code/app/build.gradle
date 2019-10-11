@@ -50,5 +50,6 @@ dependencies {
         //main模块
         implementation project(':module_main')
         implementation project(':module_login')
+        implementation project(':module_crash')
     }
 }

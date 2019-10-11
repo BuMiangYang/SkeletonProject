@@ -7,7 +7,9 @@ package com.sunway.common.constants
 object ARouterConfig {
 
     // main
-
     const val MAIN_INDEX = "/main/main_activity"
+
+    //crash
+    const val CRASH_INDEX = "/crash/crash_activity"
 
 }

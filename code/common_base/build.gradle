@@ -22,13 +22,6 @@ android {
         //MultiDex分包方法
         multiDexEnabled true
 
-        //Arouter路由配置
-//        javaCompileOptions {
-//            annotationProcessorOptions {
-//                arguments = [AROUTER_MODULE_NAME: project.getName()]
-//                includeCompileClasspath = true
-//            }
-//        }
     }
 
     buildTypes {
@@ -73,9 +66,9 @@ dependencies {
     //Glide
     api rootProject.ext.dependencies["glide"]
 
-    api rootProject.ext.dependencies["rxJava"]
-    api rootProject.ext.dependencies["rxAndroid"]
-    api rootProject.ext.dependencies["rxKotlin"]
+    //Rx家族
+    implementation rootProject.ext.rxLib
+
 
 }
 repositories {

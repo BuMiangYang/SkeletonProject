@@ -77,9 +77,6 @@ ext {
             //日志
             "logger"                  : "com.orhanobut:logger:${versions["loggerVersion"]}",
             //RX家族
-            "rxJava"                  : "io.reactivex.rxjava2:rxjava:${versions["rxJava"]}",
-            "rxAndroid"               : "io.reactivex.rxjava2:rxandroid:${versions["rxAndroid"]}",
-            "rxKotlin"                : "io.reactivex.rxjava2:rxkotlin:${versions["rxKotlin"]}",
             //网络
             "retrofit"                : "com.squareup.retrofit2:retrofit:${versions["retrofitSdkVersion"]}",
             "retrofitConverterGson"   : "com.squareup.retrofit2:converter-gson:${versions["retrofitSdkVersion"]}",
@@ -94,4 +91,12 @@ ext {
             //危险权限库
             "xxpermissions"           : "com.hjq:xxpermissions:${versions["xxpermissionsVersion"]}",
     ]
+
+    rx = [
+            "rxJava"                  : "io.reactivex.rxjava2:rxjava:${versions["rxJava"]}",
+            "rxAndroid"               : "io.reactivex.rxjava2:rxandroid:${versions["rxAndroid"]}",
+            "rxKotlin"                : "io.reactivex.rxjava2:rxkotlin:${versions["rxKotlin"]}"
+    ]
+
+    rxLib = rx.values()
 }

@@ -3,6 +3,7 @@ package com.sunway.login
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.sunway.common.base.BaseActivity
 import com.sunway.common.constants.ARouterConfig
+import com.sunway.common.ext.loge
 import com.sunway.common.manage.IntentManage
 import kotlinx.android.synthetic.main.act_login_main.*
 
@@ -27,6 +28,13 @@ class MainActivity : BaseActivity() {
         }
 
         btn_crash.setOnClickListener {
+
+            val test = arrayListOf(1, 2, 3, 4)
+
+            loge("${test[4]}")
+
+//            IntentManage.toActivity(ARouterConfig.CRASH_INDEX)
+
 
         }
     }
